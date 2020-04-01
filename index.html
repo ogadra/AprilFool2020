@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="shortcut icon" href="./pic/ico.ico">
+    <meta charset="UTF-8">
+	<title>漢字「タピオカ」が使用可能に！？ - livedra NEWS</title>
+	<meta property="og:type" content="artcle" />
+	<meta property="og:title" content="livedra NEWS" />
+	<meta property="og:url" content="http://livedra.com/20200401/0001/" />
+	<meta property="og:image" content="http://livedra.com/20200401/0001/pic/ShareCard.png">
+	<meta property="og:site_name" content="「タピオカ」を表す漢字がUnicode13.1に新登場！？" />
+	<meta property="og:description" content="「タピオカ」を表す漢字がUnicode13.1に新登場！？" />
+	<meta name="twitter:image" content="http://livedra.com/20200401/0001/pic/ShareCard.png">
+	<meta property="fb:app_id" content="AppID" />
+	<meta name="twitter:card" content="summary_large_image"/>
+	<meta name="twitter:site" content="@2020year"/>
+	<link rel="stylesheet" type="text/css" href="./script/style.css">
+<!--<meta http-equiv="refresh" content="2; URL=">-->
+</head>
+<body>
+	<div id="main">
+		<div id="header">
+			<a href="http://www.livedoor.com/">
+				<img src="./pic/view.png", alt="一覧" class="view">
+			</a>
+			<img src="./pic/livedra.png", alt="livedra news" class="top">
+		</div>
+			<hr class="sep">
+		<div class="main-inner">
+				<h6>
+					<a href="https://news.livedoor.com/">
+						TOP
+					</a>
+					> 
+					<a href="https://news.livedoor.com/topics/category/eco/">
+						IT経済
+					</a>
+					> 
+					<a href="https://news.livedoor.com/article/category/31/">
+						Web
+					</a>
+			</h6>
+				<h1>Unicode新登場の漢字、<br>まさかの「嘘」!?</h1>
+				<h6>2020年 4月1日 0時62分</h6>
+		</div>
+			<hr>
+		<div class="main-inner">
+				<p>Unicode Creatingは昨日、「The Unicode Blog: Unicode Version 13.1 released in support of the Tapioka」において、Unicode13.1を正式にリリースしたと伝えた。このバージョンには新漢字「嘘」(タピオカ)が追加される。<br><br>
+			嘘という字はもにゃゐずみ<a href="https://twitter.com/Monyaizumi">@Monyaizumi</a>氏によって作られた「創作漢字」であったが、近年における女子高生の「漢字離れ」を阻止するために追加されたという。
+				</p>
+			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<p>
+				街の声は、「今までは『タピオカ』とカタカナで打たなければならなかったのが一文字になって嬉しい」「新たな漢字を追加することは面白い取り組みだ」「これからどんどん嘘撮ろうと思います！」という意見もある一方で、「すでに嘘の時代は終わっている」「文字のストロー部分が細すぎてタピオカを吸えない」などの厳しい意見もあった。
+			<br><br>
+				SNSなどではもうすでにサポートしており、文字は下のボタンでコピーできる。
+			</p>
+			<div class="copy">
+				<input id="copyTarget" type="text" value="嘘" readonly>
+				<button onclick="copyToClipboard()">コピー</button>
+			</div>
+			<p>
+				各種OSでの変換は、4月31日より始まるとのこと。
+			</p>
+			<ul class="share">
+				<li>
+					<a href="https://twitter.com/intent/tweet?text=漢字「タピオカ」が使用可能に！？ - livedra NEWS&url=http://livedra.com/20200401/0001/">
+						<img src="./pic/Twitter.png" alt="Tweet">
+					</a>
+				</li>
+				<li>
+					<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+					<a href="https://social-plugins.line.me/lineit/share?url=漢字「タピオカ」が使用可能に！？ - livedra NEWS http://livedra.com/20200401/0001/">
+						<img src="./pic/line.png" alt="LINE Share">
+					</a>
+				</li>
+				<li>
+					<a href="http://www.facebook.com/share.php?u=http://livedra.com/20200401/0001/" >
+						<img src="./pic/facebook.png" alt="Facebook Share">
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div id="footer" onCopy="return false;">
+			<p>
+				Copyright © 2020 livedra® NEWS 
+				<br>
+				All Rights Non-Reserved.
+			</p>
+		</div>
+		
+	</div>
+	<div id="toast1" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+		<div class="toast-header">
+			<strong class="mr-auto">
+				コピーしました！
+			</strong>
+		</div>
+	  </div>
+	<script>
+		var toast = document.getElementById("toast1");
+		toast.style.display = "none";
+        function copyToClipboard() {
+            var copyTarget = document.getElementById("copyTarget");
+            copyTarget.select();
+            document.execCommand("Copy");
+			toast.style.display = "block";
+			toast.classList.add("fadeout");
+			setTimeout("reset()", 2000);
+        }
+		function reset(){
+			toast.classList.remove("fadeout");
+			toast.style.display = "none";
+		}
+		
+    </script>
+
+	</body>
+</html>

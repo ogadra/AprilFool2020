@@ -1,0 +1,194 @@
+
+@font-face {
+	font-family: 'notoserif';
+	src:url("NotoSerifJP-Bold.otf");
+}
+@font-face {
+	font-family: 'notocjk';
+	src:url("NotoSansCJKjp-DemiLight.otf");
+}
+@font-face {
+	font-family: 'mycjk';
+	src:url("Cjk_light-Regular.otf");
+	unicode-range: U+5618;
+}
+@font-face {
+	font-family: 'Myfont';
+	src:url("Myfont-Regular.otf");
+	unicode-range: U+5618;
+}
+body{
+	margin: 0;
+	font-size: 2.75rem;
+}
+
+#main{
+	display: block;
+	overflow: hidden;
+}
+#header{
+	height: 120px;
+	position: relative;
+}
+
+#header img{
+	position: absolute;
+}
+
+.view{
+	left: 7.5%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	height: 3vw;
+	max-height: 30px;
+}
+.top{
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	height: 10vw;
+	max-height: 100px;
+}
+
+h6{
+	font-size: 0.75em;
+	color: #999;
+	margin: 20px 0;
+}
+h1{
+	font-size: 1.5em;
+	font-family: 'Myfont', 'notoserif';
+	color: rgb(35, 85, 165);
+}
+
+hr{
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+hr.sep{
+	max-width: 100vw;
+	height: 12px;
+    border: 0;
+    box-shadow: inset 0 10px 10px -10px rgba(0,0,0,0.4);
+}
+
+
+.main-inner{
+	width: 80%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+p{
+	font-family: 'mycjk', 'notocjk';
+}
+
+p a{
+	color: #000;
+	text-decoration: none;
+	border-bottom: dashed 2px #bbb;
+}
+
+h6 a{
+	color: #999;
+	text-decoration: none;
+}
+
+h6 a:hover{
+	border-bottom: solid 2px #bbb;
+}
+
+input, #toast1{
+	font-family: 'mycjk', 'notocjk';
+}
+
+.copy{
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	-webkit-appearance: none;
+}
+
+.share{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	list-style: none;
+	max-height: 200px;
+	overflow: hidden;
+}
+
+.share li{
+	width: calc(100%/3);
+}
+
+.share li a img{
+	max-width: 200px;
+	width: 30%;
+	margin: 0 auto;
+	display: block;
+}
+
+#copyTarget{
+	width: 30%;
+	font-size: 4em;
+	text-align: center;
+}
+
+button{
+	border: none;
+	width: 60%;
+	background-color: #0A4CA6;
+	color: #ffffff;
+	font-size: 1.75em;
+}
+
+#toast1{
+	z-index: 1;
+	position: fixed;
+	top: 10px;
+	width: 40vw;
+	font-size: 1.25em;
+	left: 30vw;
+	background-color: #10A0F0;
+	color: aliceblue;
+	text-align: center;
+	border-radius: 3vw;
+}
+.fadeout {
+	animation : fadeOut 2s;
+	transition-timing-function: cubic-bezier(1,0,.5,1);
+	animation-fill-mode: both;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#footer{
+	background-color: #999;
+	color: #eee;
+	height: 300px;
+	text-align: center;
+	display: table;
+	width: 100%;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#footer p{
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 0.8em;
+}
